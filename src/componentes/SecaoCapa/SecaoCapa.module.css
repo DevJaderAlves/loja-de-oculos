@@ -1,0 +1,58 @@
+
+
+.secao_capa {
+  min-height: 80vh; 
+  background-image: url('/capa.png'); 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 0 10%; 
+}
+
+.secao_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.secao_conteudo h1 {
+  font-weight: normal;
+  color: white;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.secao_conteudo p {
+  color: #c4c4c4;
+  font-size: 34px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .secao_capa {
+    background-position: 80% center;
+    padding-left: 30px;
+  }
+
+  .secao_conteudo {
+    gap: 20px;
+    max-width: 350px;
+    background-color: rgba(15, 22, 80, 0.5); 
+  }
+
+  .secao_conteudo h1 {
+    font-size: 45px; 
+  }
+
+  .secao_conteudo p {
+    font-size: 25px; 
+  }
+}
+
+ 

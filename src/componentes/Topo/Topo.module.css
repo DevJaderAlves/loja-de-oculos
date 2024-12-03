@@ -1,0 +1,35 @@
+
+.container_topo{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_links{
+    display: flex;
+    gap: 20px;
+}
+.links{
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+        .container_topo{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container_links{
+            justify-content: space-around;
+            width: 100%;
+            border-top: 2px solid #727272;
+            padding-top: 10px;
+        }
+  }
+  

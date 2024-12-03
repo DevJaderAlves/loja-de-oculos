@@ -1,0 +1,68 @@
+
+
+.secao_produtos{
+    width: 100%;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container_titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container_titulo h3{
+    font-size: 30px;
+}
+.container_titulo p{
+    font-size: 20px;
+}
+
+.container_imagens{
+    display: flex;
+    gap: 20px;
+    max-width: 1024px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+    width: 100%;
+    padding: 20px 10px;
+    flex: 1 1 400px;
+    box-shadow: 2px 2px 20px -4px black;
+    background-color: #f6f6f6;
+}
+
+.garantia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.garantia ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .garantia ul {
+        list-style-position: inside;
+        padding: 0; 
+      }
+    .garantia ul li{
+        margin: 0; 
+        list-style-type: disc; 
+    }
+  }
+
